@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ESI::Application.load_tasks
+ESITestWebsite::Application.load_tasks

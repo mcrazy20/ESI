@@ -1,4 +1,28 @@
-ESI::Application.routes.draw do
+ESITestWebsite::Application.routes.draw do
+
+  get "content/sponsors"
+  get "content/aboutus"
+  get "content/scholarship"
+  get "content/charity"
+  get "content/events"
+  get "content/news"
+  get "content/pressrelease"
+  get "homepage/index"
+  get "content/contact"
+
+  resources :content
+  resources :homepage
+
+  match '/aboutus', to: 'content#aboutus'
+  match '/sponsors', to: 'content#sponsors'
+  match'/scholarship', to: 'content#scholarship'
+  match '/charity', to: 'content#charity'
+  match '/events', to: 'content#events'
+  match '/news', to: 'content#news'
+  match '/pressrelease', to: 'content#pressrelease'
+  match '/contact', to: 'content#contact'
+
+  root to:"homepage#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

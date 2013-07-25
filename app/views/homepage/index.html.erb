@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>E-Sports Initiative</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+
+
+<!-- First Band (Slider) -->
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul data-orbit>
+      <li><%=link_to image_tag('SlideshowLeague.png', style: "width:1000px;height:500px")%><div class="orbit-caption">One of our major events: LAN parties</div></li>
+      <li><%=link_to image_tag('Teambuilding.JPG', style: "width:1000px;height:500px;")%><div class="orbit-caption">Join the team for "Team Building" fun!</div></li>
+      <li><%=link_to image_tag('Check Drop.jpg', style:"width:1000px;height:500px")%><div class="orbit-caption">Come to our events to help give back to the community!</div></li>
+    </ul>
+    <!-- <div id="slider">
+      
+    </div> -->
+
+    <hr />
+  </div>
+</div>
+
+<!-- Three-up Content Blocks -->
+
+<div class="row">
+  <div class="large-4 columns">
+    <h4><%= link_to "Events", events_path%></h4>
+    <p>Events help by ESI can include video game tournaments, LAN parties, and other activities. Many of our events are fundraisers for different charities and groups.</p>
+  </div>
+
+  <div class="large-4 columns">
+    <h4><%= link_to "News", news_path%></h4>
+    <p>View gaming news that stuck out us. Whether it be new consoles or major tournaments, gamers can view plenty of different announcements in our news section.</p>
+  </div>
+
+  <div class="large-4 columns">
+    <h4><%= link_to "Charity", charity_path%></h4>
+    <p>Here you can see events that ESI has volunteered at, or is planning to volunteer at in the future. To view the schedule of events that ESI regularly participates in, go to our Press Release Tab.</p>
+  </div>
+
+</div>
+
+<!-- Call to Action Panel -->
+<div class="row">
+  <div class="large-12 columns">
+
+    <div class="panel">
+      <h4>Get in touch!</h4>
+
+      <div class="row">
+        <div class="large-6 columns">
+          <p>Want to work with ESI?</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="even-3 button-group">
+            <li><a href="#" class="small button">Volunteer with us</a></li>
+            <li><a href="#" class="small button">Meet with us</a></li>
+            <li><%=link_to "Contact Us", contact_path, class: "small button" %></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>Want to keep up to date?</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="even-2 button-group">
+            <li><%=link_to "Facebook", "https://www.facebook.com/esportsinitiative", class: "small button"%></li>
+            <li><%=link_to "Twitter", "https://twitter.com/ESI_OSU", class: "small button"%></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>
+

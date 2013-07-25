@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ESI::Application.config.secret_token = '528ac39635b1c1a92433696f3e97eea11e15ae59024ee611c84cff503df7f1d96cb751343f7f834243a18940d39d34184c2d744568d3f604992085a307f1a08a'
+ESITestWebsite::Application.config.secret_token = '6858ba0f44554a1065be01af87f4226bb9434f64ac945636b01fc66f4328bacb2d77f5ac1be6bb3dfaed98ef3b5226e84ed826d0509588723bcb8f5ed04c4730'
